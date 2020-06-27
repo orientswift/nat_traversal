@@ -54,9 +54,9 @@ int main()
     struct sockaddr_in clientaddr;
     memset(&clientaddr, 0, sizeof(clientaddr));
     //外网服务器端口号
-    clientaddr.sin_port = htons(8888);
+    clientaddr.sin_port = htons(6900);
     //外网服务器ip
-    clientaddr.sin_addr.s_addr = inet_addr("139.9.5.28");
+    clientaddr.sin_addr.s_addr = inet_addr("47.103.42.216");
     clientaddr.sin_family = AF_INET;
  
     sendto(sockfd, &ch, sizeof(ch), 0, (struct sockaddr *)&clientaddr, sizeof(struct sockaddr_in));

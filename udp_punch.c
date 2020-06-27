@@ -17,7 +17,7 @@
     }while(0)
 
 #define  ID_BYTE_SIZE  10 
-#define  LISTEN_PORT   8888
+#define  LISTEN_PORT   6900
 typedef struct{
     struct in_addr ip;
     int port;
